@@ -21,6 +21,7 @@ header {
   gap: 1rem;
   text-align: center;
   border: 1px solid red;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 380px) {
   header {
@@ -115,12 +116,72 @@ header .container-inputs .input-submit-box button {
   color: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+header .container-inputs .input-submit-box button:hover {
+  background: #383838;
 }
 @media screen and (max-width: 320px) {
   header .container-inputs .input-submit-box select, header .container-inputs .input-submit-box button {
     font-size: 0.8rem;
     width: 70vw;
   }
+}
+
+main {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 40px;
+  width: 100%;
+}
+@media screen and (max-width: 380px) {
+  main {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 120vh) {
+  main {
+    gap: 2rem;
+  }
+}
+main .cardTarefas {
+  background: rgba(255, 255, 255, 0.603);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  max-width: 100%;
+  width: 320px;
+}
+@media screen and (max-width: 720px) {
+  main .cardTarefas {
+    width: 500px;
+  }
+}
+main .cardTarefas .tarefaBox {
+  background-color: white;
+  width: 280px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  padding: 5px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 1px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

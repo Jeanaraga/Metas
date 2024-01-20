@@ -4,6 +4,7 @@ header{
     gap: 1rem;
     text-align: center;
     border: 1px solid red;
+    margin-bottom: 40px;
 
     @media screen and (max-width:380px) {
         padding: 40px 20px;
@@ -97,6 +98,11 @@ header{
                 color: white;
                 @include sombra(5px);
                 cursor: pointer;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    background: #383838;
+                }
             }
 
             @media screen and (max-width:320px) {

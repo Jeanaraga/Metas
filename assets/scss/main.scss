@@ -1,0 +1,48 @@
+main {
+    padding: 40px ;
+    @include flexRow();
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-bottom: 40px;
+    width: 100%;
+
+    @media screen and (max-width:380px) {
+        padding: 40px 20px;
+    }
+
+    @media screen and (max-width:120vh) {
+        gap: 2rem;
+    }
+
+    .cardTarefas {
+        background: rgba(255, 255, 255, 0.603);
+        padding: 10px;
+        @include flexColumnCenter();
+        gap: 0.6rem;
+        @include sombra(5px);
+        border-radius: 5px;
+        max-width: 100%;
+        width: 320px;
+
+        @media screen and (max-width:720px) {
+            width: 500px;
+        }
+
+        
+        
+
+        .tarefaBox {
+            background-color: white;
+            width: 280px;
+            max-width: 100%;
+            @include flexRow(space-between);
+            border: none;
+            padding: 5px;
+            @include sombra(2px);
+            border-radius: 1px;
+            cursor: pointer;
+
+            
+        }
+    }
+}
