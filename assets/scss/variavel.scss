@@ -1,0 +1,18 @@
+@mixin flexColumnCenter(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexRow($justify: center) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: $justify;
+}
+
+@mixin sombra($tamanho: 10px){
+    box-shadow: $tamanho $tamanho 15px rgba($color: #000000, $alpha: 0.3);
+}
