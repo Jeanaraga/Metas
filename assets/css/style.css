@@ -20,6 +20,12 @@ header {
   justify-content: center;
   gap: 1rem;
   text-align: center;
+  border: 1px solid red;
+}
+@media screen and (max-width: 380px) {
+  header {
+    padding: 40px 20px;
+  }
 }
 header h1 {
   font-size: 2.5rem;
@@ -42,7 +48,7 @@ header .container-inputs {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 header .container-inputs .input-field {
   display: flex;
@@ -50,10 +56,10 @@ header .container-inputs .input-field {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
   background-color: white;
   padding: 5px 10px;
-  border: 1px solid #000;
+  border: none;
   border-radius: 4px;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
 }
@@ -62,6 +68,7 @@ header .container-inputs .input-field input {
   font-size: 1rem;
   background: transparent;
   text-transform: capitalize;
+  max-width: 80%;
 }
 header .container-inputs .input-field input:focus {
   outline: none;
@@ -71,6 +78,14 @@ header .container-inputs .input-field input::placeholder {
 }
 header .container-inputs .input-field span {
   color: #ccc;
+}
+@media screen and (max-width: 320px) {
+  header .container-inputs .input-field {
+    width: 70vw;
+  }
+  header .container-inputs .input-field input {
+    font-size: 0.7rem;
+  }
 }
 header .container-inputs .input-submit-box {
   display: flex;
@@ -85,10 +100,27 @@ header .container-inputs .input-submit-box select {
   padding: 5px 10px;
   border: none;
   border-radius: 4px;
+  background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 header .container-inputs .input-submit-box select:focus {
   outline: none;
+}
+header .container-inputs .input-submit-box button {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background: rgb(0, 0, 0);
+  color: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  header .container-inputs .input-submit-box select, header .container-inputs .input-submit-box button {
+    font-size: 0.8rem;
+    width: 70vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
