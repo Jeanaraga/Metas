@@ -29,6 +29,7 @@ header{
         max-width: 650px;
         @include flexRow(center);
         gap: 1.5rem;
+        position: relative;
 
         .input-field {
             @include flexRow();
@@ -110,6 +111,11 @@ header{
                     width: 70vw;
                 }
             }
+        }
+
+        #warnerSpan {
+            position: absolute;
+            bottom: -20px;
         }
     }
 }

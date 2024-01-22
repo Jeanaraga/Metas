@@ -49,6 +49,7 @@ header .container-inputs {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+  position: relative;
 }
 header .container-inputs .input-field {
   display: flex;
@@ -125,6 +126,10 @@ header .container-inputs .input-submit-box button:hover {
     font-size: 0.8rem;
     width: 70vw;
   }
+}
+header .container-inputs #warnerSpan {
+  position: absolute;
+  bottom: -20px;
 }
 
 main {
