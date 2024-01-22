@@ -196,7 +196,11 @@ main .cardTarefas .tarefaBox {
   border-radius: 1px;
   cursor: pointer;
 }
-main .cardTarefas .tarefaBox .deleteIcon {
+main .cardTarefas .tarefaBox p {
+  width: 70%;
+  text-align: center;
+}
+main .cardTarefas .tarefaBox button {
   color: #000;
   display: flex;
   flex-direction: row;
@@ -209,7 +213,7 @@ main .cardTarefas .tarefaBox .deleteIcon {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-main .cardTarefas .tarefaBox .deleteIcon:hover {
+main .cardTarefas .tarefaBox button:hover {
   background-color: #fa1e1e;
   transform: scale(1.05);
 }

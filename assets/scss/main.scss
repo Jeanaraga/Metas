@@ -46,7 +46,17 @@ main {
             border-radius: 1px;
             cursor: pointer;
 
-            .deleteIcon {
+            // span.checkIcon {
+            //     border: 1px solid green;
+            //     width: 20%;
+            // }
+
+            p {
+                width: 70%;
+                text-align: center;
+            }
+
+            button {
                 color: #000;
                 @include flexRow();
                 background-color: #ff4949;
@@ -54,6 +64,7 @@ main {
                 outline: none;
                 cursor: pointer;
                 transition: all 0.5s ease;
+                
 
                 &:hover {
                     background-color: #fa1e1e;
