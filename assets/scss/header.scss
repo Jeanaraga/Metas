@@ -3,7 +3,6 @@ header{
     @include flexColumnCenter();
     gap: 1rem;
     text-align: center;
-    border: 1px solid red;
     margin-bottom: 40px;
 
     @media screen and (max-width:380px) {

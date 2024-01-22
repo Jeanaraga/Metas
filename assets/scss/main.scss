@@ -18,23 +18,27 @@ main {
         background: rgba(255, 255, 255, 0.603);
         padding: 10px;
         @include flexColumnCenter();
-        gap: 0.6rem;
+        gap: 1rem;
         @include sombra(5px);
         border-radius: 5px;
         max-width: 100%;
         width: 320px;
+        transition: all 0.5s ease;
 
         @media screen and (max-width:720px) {
             width: 500px;
         }
 
-        
-        
+        .containerTarefas {
+            @include flexColumnCenter();
+            gap: 0.5rem;
+            width: 100%;
+        }
 
         .tarefaBox {
             background-color: white;
-            width: 280px;
-            max-width: 100%;
+            width: 100%;
+            max-width: 400px;
             @include flexRow(space-between);
             border: none;
             padding: 5px;
@@ -42,7 +46,34 @@ main {
             border-radius: 1px;
             cursor: pointer;
 
-            
+            .deleteIcon {
+                color: #000;
+                @include flexRow();
+                background-color: #ff4949;
+                border: 1px solid #ff4949;
+                outline: none;
+                cursor: pointer;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    background-color: #fa1e1e;
+                    transform: scale(1.05);
+                }
+            }
         }
+
+        .tarefaBox.clicado {
+            border: 1px solid #013a05;
+        
+            .checkIcon {
+                color: #013a05;
+            }
+
+            .nomeTarefa {
+                color: #ccc;
+                text-decoration: line-through;
+            }
+        };
     }
 }
+
